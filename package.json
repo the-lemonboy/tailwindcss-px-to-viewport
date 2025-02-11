@@ -1,17 +1,23 @@
 {
   "name": "@tailwindcss/px-to-viewport",
   "version": "0.1.0",
-  "description": "",
-  "main": "./src/index.js",
+  "private": false,
+  "description": "use tailwindcss px to vw or vh",
+  "author": "the-lemonboy",
+  "license": "MIT",
+  "homepage": "https://github.com/the-lemonboy/tailwindcss-px-to-viewport",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-lemonboy/tailwindcss-px-to-viewport"
+  },
+  "keywords": [],
+  "main": "src/index.js",
   "scripts": {
     "cssServe": "npx tailwindcss -i ./playground/input.css -o ./playground/output.css",
     "serve": "http-server ./playground",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "keywords": [],
-  "author": "the-lemonboy",
-  "license": "MIT",
   "devDependencies": {
     "@antfu/eslint-config": "^4.2.0",
     "eslint": "^9.20.0",

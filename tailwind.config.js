@@ -1,13 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+import plugin from './src/index.js'
+
 module.exports = {
-  content: ["./playground/**/*.{html,js}"],
+  content: ['./playground/**/*.{html,js}'],
   theme: {
     extend: {
       pxToViewPort: {
         PresetScreen: {
           height: 1920,
           width: 1080,
-          toUnit: 'vh'
+          toUnit: 'vh',
         },
         utils: {
           fontSize: 'fontSize',
@@ -19,13 +21,10 @@ module.exports = {
           r: 'right',
           b: 'bottom',
           l: 'left',
-          size: 'size'
-
-        }
-      }
-
+          size: 'size',
+        },
+      },
     },
   },
-  plugins: [require('./src/index.js')],
+  plugins: [plugin],
 }
-
