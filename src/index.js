@@ -1,11 +1,11 @@
 import plugin from 'tailwindcss/plugin';
-import utilities from './utilities'; 
+import utilities from './utilities';
 import options from './options';
 
 const pxToViewport = plugin.withOptions(function () {
     return function ({ matchUtilities, theme }) {
         const presetScreen = theme("pxToViewPort.PresetScreen") || options.PresetScreen;
-        const utils = Object.assign(utilities,theme("pxToViewPort.utils")) || {};
+        const utils = Object.assign(utilities, theme("pxToViewPort.utils")) || {};
         matchUtilities(
             {
                 ...Object.fromEntries(
@@ -37,5 +37,5 @@ const pxToViewport = plugin.withOptions(function () {
     };
 });
 
-// 将 pxToViewport 导出
+
 export = pxToViewport;

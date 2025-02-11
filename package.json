@@ -5,7 +5,9 @@
   "main": "./src/index.js",
   "scripts": {
     "cssServe": "npx tailwindcss -i ./playground/input.css -o ./playground/output.css",
-    "serve": "http-server ./playground"
+    "serve": "http-server ./playground",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "the-lemonboy",
