@@ -1,7 +1,6 @@
 {
-  "name": "@tailwindcss/px-to-viewport",
-  "version": "0.1.0",
-  "private": false,
+  "name": "tailwindcss-px-to-viewport",
+  "version": "0.1.1",
   "description": "use tailwindcss px to vw or vh",
   "author": "the-lemonboy",
   "license": "MIT",
@@ -12,6 +11,10 @@
   },
   "keywords": [],
   "main": "src/index.js",
+  "files": [
+    "README.md",
+    "src/"
+  ],
   "scripts": {
     "cssServe": "npx tailwindcss -i ./playground/input.css -o ./playground/output.css",
     "serve": "http-server ./playground",
