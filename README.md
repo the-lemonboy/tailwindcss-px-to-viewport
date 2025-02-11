@@ -9,27 +9,35 @@
 ```bash
 npm install tailwindcss-px-to-viewport
 ```
+
 使用示例
 在你的 Tailwind CSS 配置文件中添加以下内容:
 
 ```javascript
+import pxToViewport from 'tailwindcss-px-to-viewport'
+
 module.exports = {
   theme: {
     extend: {
-      // 你的自定义配置
+      pxToViewPort: {
+        PresetScreen: {
+          width: 1920,
+          height: 1080,
+        },
+      },
     },
   },
-  plugins: [
-    require('tailwindcss-px-to-viewport')({
-      // 配置选项
-    }),
-  ],
+  plugins: [pxToViewport],
 }
 ```
 
 配置选项
-viewportWidth: 设置视口宽度，默认为 375。
-viewportHeight: 设置视口高度，默认为 667。
+viewportWidth: 设置视口宽度，默认为 1920px。
+viewportHeight: 设置视口高度，默认为 1080px。
+
+使用语法
+
+
 贡献
 欢迎贡献代码！请提交 Pull Request 或报告问题。
 
