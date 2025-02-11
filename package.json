@@ -1,16 +1,18 @@
 {
-  "name": "tailwindcss-px-to-viewport",
-  "version": "1.0.0",
+  "name": "@tailwindcss/px-to-viewport",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "playcss": "npx tailwindcss -i ./playground/input.css -o ./playground/output.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "http-server ./playground"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "the-lemonboy",
+  "license": "MIT",
   "devDependencies": {
+    "@antfu/eslint-config": "^4.2.0",
+    "eslint": "^9.20.0",
     "tailwindcss": "3"
   }
 }

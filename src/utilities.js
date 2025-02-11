@@ -15,6 +15,6 @@ const utilities = {
     right: "right",
     bottom: "bottom",
     left: "left",
-   
-
 }
+
+export default utilities

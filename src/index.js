@@ -1,10 +1,11 @@
-const plugin = require('tailwindcss/plugin');
+import plugin from 'tailwindcss/plugin';
+import utilities from './utilities'; 
+import options from './options';
 
 const pxToViewport = plugin.withOptions(function () {
     return function ({ matchUtilities, theme }) {
-        // 获取 pxToViewPort 的配置信息
-        const presetScreen = theme("pxToViewPort.PresetScreen") || {};
-        const utils = theme("pxToViewPort.utils") || {};
+        const presetScreen = theme("pxToViewPort.PresetScreen") || options.PresetScreen;
+        const utils = Object.assign(utilities,theme("pxToViewPort.utils")) || {};
         matchUtilities(
             {
                 ...Object.fromEntries(
@@ -12,7 +13,7 @@ const pxToViewport = plugin.withOptions(function () {
                         `pw-${key}`,
                         (val) => {
                             const unit = 'vw';
-                            const screenWidth = presetScreen.width || 1080;
+                            const screenWidth = presetScreen.width || options.PresetScreen.width;
                             return {
                                 [value]: `${((parseFloat(val) / screenWidth) * 100).toFixed(2)}${unit}`,
                             };
@@ -24,9 +25,9 @@ const pxToViewport = plugin.withOptions(function () {
                         `ph-${key}`,
                         (val) => {
                             const unit = 'vh';
-                            const screenWidth = presetScreen.width || 1080;
+                            const screenHeight = presetScreen.height || options.PresetScreen.height;
                             return {
-                                [value]: `${((parseFloat(val) / screenWidth) * 100).toFixed(2)}${unit}`,
+                                [value]: `${((parseFloat(val) / screenHeight) * 100).toFixed(2)}${unit}`,
                             };
                         },
                     ])
@@ -37,4 +38,4 @@ const pxToViewport = plugin.withOptions(function () {
 });
 
 // 将 pxToViewport 导出
-module.exports = pxToViewport;
+export = pxToViewport;
