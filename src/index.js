@@ -5,7 +5,7 @@ import utilities from './utilities'
 const pxToViewport = plugin.withOptions(() => {
   return function ({ matchUtilities, theme }) {
     const presetScreen = theme('pxToViewPort.PresetScreen') || options.PresetScreen
-    const combinedUtilities = Object.assign(utilities, theme('pxToViewPort.utils')) || {}
+    const combinedUtilities = Object.assign(utilities, theme('pxToViewPort.utilities')) || {}
     matchUtilities(
       {
         ...Object.fromEntries(
@@ -19,7 +19,7 @@ const pxToViewport = plugin.withOptions(() => {
                 return values
               }
               return {
-                [value]: `${((Number.parseFloat(val) / screenWidth) * 100).toFixed(2)}${unit}`,
+                [value]: `${((Number.parseFloat(val) / screenWidth) * 100).toFixed(6)}${unit}`,
               }
             },
           ]),

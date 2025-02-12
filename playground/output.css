@@ -563,6 +563,15 @@ video {
   height: 7.81vh;
 }
 
+.pw-mx-\[100\] {
+  margin-left: 9.26vw;
+  margin-right: 9.26vw;
+}
+
+.pw-text-\[100\] {
+  font-size: 9.26vw;
+}
+
 .pw-w-\[200\] {
   width: 18.52vw;
 }
