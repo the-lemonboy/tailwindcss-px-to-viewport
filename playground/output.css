@@ -554,24 +554,43 @@ video {
   display: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .bg-slate-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity, 1));
 }
 
-.ph-h-\[150\] {
-  height: 7.81vh;
+.ph-h-\[500\] {
+  height: 46.30vh;
 }
 
-.pw-mx-\[100\] {
-  margin-left: 9.26vw;
-  margin-right: 9.26vw;
+.pw-text-\[20\] {
+  font-size: 1.041667vw;
 }
 
-.pw-text-\[100\] {
-  font-size: 9.26vw;
+.pw-w-\[500\] {
+  width: 26.041667vw;
 }
 
-.pw-w-\[200\] {
-  width: 18.52vw;
+.pw-text-\[50\] {
+  font-size: 2.604167vw;
 }

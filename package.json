@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-px-to-viewport",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "use tailwindcss px to vw or vh",
   "author": "the-lemonboy",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "src/"
   ],
   "scripts": {
-    "cssServe": "npx tailwindcss -i ./playground/input.css -o ./playground/output.css",
+    "cssServe": "npx tailwindcss -i ./playground/input.css -o ./playground/output.css --watch",
     "serve": "http-server ./playground",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
