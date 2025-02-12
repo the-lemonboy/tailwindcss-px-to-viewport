@@ -1,4 +1,4 @@
-# tailwindcss-px-to-viewport
+# Tailwind CSS px-to-viewport
 
 [![npm version](https://img.shields.io/npm/v/tailwindcss-px-to-viewport)](https://www.npmjs.com/package/tailwindcss-px-to-viewport) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 

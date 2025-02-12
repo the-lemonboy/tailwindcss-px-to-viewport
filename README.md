@@ -1,10 +1,10 @@
-# tailwindcss-px-to-viewport
+# Tailwind CSS px-to-viewport
 
 [![npm version](https://img.shields.io/npm/v/tailwindcss-px-to-viewport)](https://www.npmjs.com/package/tailwindcss-px-to-viewport) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 English | [中文](README_CN.md)
 
-A tailwindcss plugin that automatically converts **px** unit properties to viewport units **vw** or **vh**.
+Tailwind CSS plugin that automatically converts **px** unit properties to viewport units **vw** or **vh**.
 
 ## Installation
 
