@@ -4,17 +4,15 @@
 
 [English](README.md) | 中文
 
-Tailwind CSS plugin that intelligently converts `px` unit properties into viewport units (`vw` or `vh`), helping with responsive layout development.
-
----
+Tailwind CSS 插件，支持将 **px** 单位属性自动转换为视口单位 **vw** 或 **vh。**
 
 ## Installation
 
-Install via npm:
+通过npm安装
 
 ```bash
 npm install tailwindcss-px-to-viewport --save-dev
-
+```
 
 ## 配置指南
 
@@ -58,7 +56,7 @@ export default {
 
 使用 `pw+utility` 可以将 `px` 单位转换为 `vw`，而使用 `ph+utility` 则可以将 `px` 单位转换为 `vh`。
 
-## Utility 类映射
+## 属性映射
 
 | **tailwindcss 属性** | **生成的 CSS 属性** | **转换规则**                   | **结果**                 |
 | -------------------------- | ------------------------- | ------------------------------------ | ------------------------------ |
