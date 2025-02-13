@@ -19,11 +19,23 @@
     "cssServe": "npx tailwindcss -i ./playground/input.css -o ./playground/output.css --watch",
     "serve": "http-server ./playground",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "lint-staged": "lint-staged"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.2.0",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
     "eslint": "^9.20.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "tailwindcss": "3"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --cache --fix",
+      "git add"
+    ]
   }
 }
