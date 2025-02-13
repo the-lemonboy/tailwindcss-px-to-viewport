@@ -6,7 +6,7 @@
 
 Tailwind CSS 插件，支持将 **px** 单位属性自动转换为视口单位 **vw** 或 **vh。**
 
-## Installation
+## 安装
 
 通过npm安装
 
@@ -40,7 +40,7 @@ export default {
     },
   },
   plugins: [
-    pxToViewport // 启用插件
+    pxToViewport() // 启用插件
   ],
 }
 ```
@@ -58,7 +58,7 @@ export default {
 
 ## 属性映射
 
-| **tailwindcss 属性** | **生成的 CSS 属性** | **转换规则**                   | **结果**                 |
+| **Tailwind CSS属性** | **生成的 CSS 属性** | **转换规则**                   | **结果**                 |
 | -------------------------- | ------------------------- | ------------------------------------ | ------------------------------ |
 | `pw-w-[value]`           | width                     | px → (value/`viewportWidth`)*100  | `width: [*] vw`              |
 | `pw-h-[value]`           | height                    | px → (value/`viewportHeight`)*100 | `height: [*] vh`             |
