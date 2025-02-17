@@ -35,6 +35,9 @@ export default {
         // Custom extension rules (optional)
         utilities: {
           // Add custom conversion rules here
+		'mt': 'margin-top',
+  		'mx': ['margin-left', 'margin-right'], // More than one property is represented as an array
+  		'my': ['margin-top', 'margin-bottom'],
         }
       },
     },

@@ -35,6 +35,9 @@ export default {
         // 自定义扩展规则（可选）
         utilities: {
           // 在此添加自定义转换规则
+		'mt': 'margin-top',
+  		'mx': ['margin-left', 'margin-right'],  // 两个属性以上使用数组
+  		'my': ['margin-top', 'margin-bottom'],
         }
       },
     },
