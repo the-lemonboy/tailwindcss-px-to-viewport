@@ -6,6 +6,12 @@ English | [中文](README_CN.md)
 
 Tailwind CSS plugin that automatically converts **px** unit properties to viewport units **vw** or **vh**.
 
+## Features
+- 📏 Automatic viewport unit conversion based on design draft dimensions
+- 🖌️ Custom CSS property mapping rules
+- 📱 Compatible with Tailwind CSS v3.x
+- 💡 Dual support for width (vw) and height (vh) baselines
+
 ## Installation
 
 Install via npm:
