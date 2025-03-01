@@ -54,6 +54,13 @@ export default {
 }
 ```
 
+If you are using Tailwind CSS V4, you can configure the plugin directly in the global stylesheet:
+
+```css
+@import "tailwindcss";
+@plugin 'tailwindcss-px-to-viewport';
+```
+
 ## Configuration Parameters
 
 | **Parameter** | **Type** | **Default Value** | **Description**      |

@@ -54,6 +54,14 @@ export default {
 }
 ```
 
+如果你在Tailwind CSS V4中使用，可以直接在全局样式文件中配置插件：
+
+```css
+@import "tailwindcss";
+@plugin 'tailwindcss-px-to-viewport';
+
+```
+
 ## 配置参数说明
 
 | **参数**     | **类型** | **默认值** | **描述**            |
