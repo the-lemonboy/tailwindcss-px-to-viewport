@@ -21,8 +21,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "lint-staged": "lint-staged",
-    "test": "vitest"
+    "lint-staged": "lint-staged"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.2.0",
