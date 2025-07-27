@@ -1,5 +1,6 @@
 {
   "name": "tailwindcss-px-to-viewport",
+  "type": "module",
   "version": "0.1.3",
   "description": "use tailwindcss px to vw or vh",
   "author": "the-lemonboy",
